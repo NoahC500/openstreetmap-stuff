@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?> 
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" 
-author="caranteth" 
-version="1.4_2022-09-25"
+author="caranteth, NoahC500"
+version="2"
 icon="presets/service/post_box.svg"
 
 description="Presets for more detailed mapping of the UK postal system"
@@ -11,20 +11,24 @@ link = "https://wiki.openstreetmap.org/wiki/Tag:amenity=post_box">
 
 	<group name="Postal System - UK" icon="presets/service/post_box.svg">
 		<item name="Post Box - UK" icon="presets/service/post_box.svg" type="node" preset_name_label="true">
-			<link href="https://wiki.openstreetmap.org/wiki/Tag:amenity=post_box" />
-			<space />
-			<key key="amenity" value="post_box" />
-			<combo key="operator" text="Operator" values="Royal Mail" />
-			<text key="ref" text="Reference number" />
-			<combo key="collection_times" text="Collection times" delimiter="|" values="Mo-Fr 09:00; Sa 07:00|" />
-			<combo key="post_box:type" text="Type" values="pillar,lamp,wall,meter" values_context="post_box" />
-			<combo key="source" text="Source" values="survey,streetlevel_imagery,aerial_imagery,dracos" />
-			<space />
+			<link href="https://wiki.openstreetmap.org/wiki/Tag:amenity=post_box"/>
+			<space/>
+			<key key="amenity" value="post_box"/>
+			<combo key="brand" values="Royal Mail"/>
+			<combo key="operator" text="Operator" values="Royal Mail"/>
+			<combo key="operator:wikidata" text="Operator:WD" values="Q638098"/>
+			<text key="ref" text="Reference number"/>
+			<combo key="colour" values="red,blue,yellow"/>
+			<combo key="collection_times" text="Collection times" delimiter="|" values="Mo-Fr 09:00; Sa 07:00|"/>
+			<combo key="check_date:collection_times"/>
+			<combo key="post_box:type" text="Type" values="pillar,lamp,wall,meter" values_context="post_box"/>
+			<combo key="source" text="Source" values="survey,streetlevel_imagery,aerial_imagery,dracos"/>
+			<space/>
 			<combo key="royal_cypher" text="Royal cypher" values="VR,EVIIR,GR,EVIIIR,GVIR,EIIR,crown,scottish_crown,no"/>
-			<combo key="post_box:design" text="Design" values="hovis,indoor_pillar,liverpool_special,ludlow,type_a,type_b,type_c,type_d,type_e,type_g,double_type_g,type_k,type_l,type_m,type_n,penfold,reproduction_penfold,waggon_top" />
-			<combo key="post_box:mounting" text="Mounting" values="brick_pillar,lamp_post,pier,pole,wall,wooden_post,telegraph_pole" />
-			<combo key="post_box:apertures" text="Apertures (if >1)" values="2,3,4" />
-			<check key="drive_through" text="Drive through" />
-		</item> <!-- Post Box - UK-->
+			<combo key="post_box:design" text="Design" values="hovis,indoor_pillar,liverpool_special,ludlow,type_a,type_b,type_c,type_d,type_e,type_g,double_type_g,type_k,type_l,type_m,type_n,penfold,reproduction_penfold,waggon_top"/>
+			<combo key="post_box:mounting" text="Mounting" values="building,stone_wall,brick_wall,rendered_wall,stone_pillar,brick_pillar,rendered_pillar,pier,wooden_post,concrete_post,metal_post,telegraph_pole,lamp_post"/>
+			<combo key="post_box:apertures" text="Apertures" values="1,2,3,4"/>
+			<check key="drive_through" text="Drive through"/>
+		</item>
    </group>
 </presets>
