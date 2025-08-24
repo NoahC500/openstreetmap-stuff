@@ -14,13 +14,13 @@ link = "https://wiki.openstreetmap.org/wiki/Tag:amenity=post_box">
 			<link href="https://wiki.openstreetmap.org/wiki/Tag:amenity=post_box"/>
 			<space/>
 			<key key="amenity" value="post_box"/>
-			<combo key="brand" values="Royal Mail"/>
+			<combo key="brand" text="Brand" values="Royal Mail"/>
 			<combo key="operator" text="Operator" values="Royal Mail"/>
 			<combo key="operator:wikidata" text="Operator:WD" values="Q638098"/>
 			<text key="ref" text="Reference number"/>
-			<combo key="colour" values="red,blue,yellow"/>
+			<combo key="colour" text="Colour" values="red,blue,yellow"/>
 			<combo key="collection_times" text="Collection times" delimiter="|" values="Mo-Fr 09:00; Sa 07:00|"/>
-			<combo key="check_date:collection_times"/>
+			<combo key="check_date:collection_times" text="Collection times check date (YYYY-MM-DD)"/>
 			<combo key="post_box:type" text="Type" values="pillar,lamp,wall,meter" values_context="post_box"/>
 			<combo key="source" text="Source" values="survey,streetlevel_imagery,aerial_imagery,dracos"/>
 			<space/>
